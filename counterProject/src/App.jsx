@@ -10,7 +10,7 @@ function App() {
   // let counter = 15
 
   const addValue = () =>{
-    console.log("value added", counter);
+    // console.log("value added", counter);
     // counter = counter + 1
     setCounter(prevcounter => prevcounter+ 1);
     setCounter(prevcounter => prevcounter+ 1);

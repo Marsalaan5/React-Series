@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState,useCallback,useEffect,useRef} from 'react'
 
 
 
@@ -37,10 +37,15 @@ function App() {
   useEffect(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
+
   return (
     
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
+
+
       <h1 className='text-white text-center my-3'>Password generator</h1>
+
+
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
             type="text"
@@ -56,6 +61,9 @@ function App() {
         >copy</button>
         
     </div>
+
+
+
     <div className='flex text-sm gap-x-2'>
       <div className='flex items-center gap-x-1'>
         <input 
@@ -68,8 +76,11 @@ function App() {
           />
           <label>Length: {length}</label>
       </div>
+
+
+
       <div className="flex items-center gap-x-1">
-      <input
+       <input
           type="checkbox"
           defaultChecked={numberAllowed}
           id="numberInput"
@@ -77,8 +88,11 @@ function App() {
               setNumberAllowed((prev) => !prev);
           }}
       />
-      <label htmlFor="numberInput">Numbers</label>
+
+        <label htmlFor="numberInput">Numbers</label>
       </div>
+
+
       <div className="flex items-center gap-x-1">
           <input
               type="checkbox"
@@ -90,6 +104,7 @@ function App() {
           />
           <label htmlFor="characterInput">Characters</label>
       </div>
+      
     </div>
 </div>
     
@@ -97,3 +112,6 @@ function App() {
 }
 
 export default App
+
+
+
